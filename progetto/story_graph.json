@@ -1,0 +1,37 @@
+{
+  "_PLACEHOLDER_NOTE": "Grafo placeholder vuoto, valido a schema. Permette al cruscotto web di buildare prima del bootstrap reale. Verra' SOVRASCRITTO dal primo bootstrap_graph (Fase 02). Non modificare a mano.",
+  "schema_version": "1.0",
+  "graph_version": "0.0.0",
+  "project": {
+    "id": "california",
+    "title": "California",
+    "subtitle": "Romanzo — fantascienza cargo, smuggling",
+    "medium": "romanzo",
+    "target_audience": "adulti",
+    "language": "it",
+    "created_at": "2026-05-10",
+    "updated_at": "2026-05-10"
+  },
+  "entities": {
+    "characters": {},
+    "locations": {}
+  },
+  "units": {},
+  "global_relations": {
+    "narrative_promises": {},
+    "explicit_callbacks": {},
+    "narrative_debts": {},
+    "character_arcs": {}
+  },
+  "quote_tracker": {},
+  "misalignments_path": "misalignments.json",
+  "audit": {
+    "last_run": null,
+    "results": {
+      "audit_1_integrity": "skip",
+      "audit_2_schema": "skip",
+      "audit_3_navigability": "skip",
+      "audit_4_drift": "skip"
+    }
+  }
+}

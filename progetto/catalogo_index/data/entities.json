@@ -1,0 +1,19 @@
+{
+  "_PLACEHOLDER_NOTE": "Indice catalogo placeholder vuoto, valido a schema. Permette al cruscotto web di buildare prima della popolazione del catalogo reale. Verra' SOVRASCRITTO dal primo build_catalog_index (Fase 04). Non modificare a mano.",
+  "generated_at": "2026-05-10T00:00:00.000Z",
+  "totals": {
+    "totale": 0,
+    "luogo": 0,
+    "oggetto": 0,
+    "personaggio": 0,
+    "vento": 0,
+    "visual_signature": 0
+  },
+  "by_status": {
+    "canonico": 0,
+    "provvisorio": 0
+  },
+  "tree": {},
+  "entities": [],
+  "aux": {}
+}
