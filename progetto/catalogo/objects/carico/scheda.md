@@ -4,58 +4,89 @@ name: Il carico
 famiglia: oggetto
 sottotipo: oggetto_macguffin
 tipo_grafo: container sigillati
-ruolo_saga: 32 container di marijuana dalla Terra (ufficialmente: materiale organico per ricerca agronomica); ragione del lavoro
+ruolo_saga: "32 container di marijuana dalla Terra (ufficialmente: materiale organico per ricerca agronomica); ragione del lavoro"
 status: provvisorio
 ultima_modifica: 2026-05-10
 fonti:
-  - "story_graph.json#entities.objects.carico"
+  - 'progetto/story_graph.json#entities.objects.carico'
+  - 'progetto/glossario_consegna.json#entities.objects.carico'
+  - 'progetto/_documenti_anima/originali_aila/GRAFO.md §OGGETTI.SIGNIFICATIVI'
 appare_in_storie: []
-relazioni: {}
 ---
-
 
 # Il carico
 
-> **Stato compilazione:** scheda embrionale post-promozione. Tutte le
-> sezioni in `_da popolare_`, da arricchire dal catalogatore.
+> **Stato compilazione:** body popolato da `story_graph` + GRAFO.md AILA + capitoli scritti. Derivazione autoriale dove i dati specifici non sono nelle fonti.
 
 ## Identità (sintesi)
 
-_da popolare_
+**Ruolo nel progetto:** 32 container di marijuana dalla Terra (ufficialmente: materiale organico per ricerca agronomica); ragione del lavoro.
+
+**Tipo:** container sigillati. **Categoria:** oggetto_macguffin.
 
 ## Aspetto / forma
 
-_da popolare_
+32 container industriali da 2x2x2 metri ciascuno, dipinti di verde sbiadito. Stencil 'MATERIALE ORGANICO — RICERCA AGRONOMICA — TEMPERATURA CONTROLLATA 18°C'. Ventilazione di refrigerazione sui lati, codice a barre, etichetta doganale ufficiale leggermente consumata. Documentazione perfetta. Sembrano completamente legittimi.
 
-## Espressione / comportamento
+## Uso e contesto
 
-_da popolare_
+Officially: organic material for agronomic research. Reality: marijuana from Earth, distributed by network to people in colonies who need it (not who pay most)
 
-## Palette e atmosfera
+## Significato narrativo
 
-_da popolare_
+Il carico = la missione. Il sacrificio del cap.6-7 (consegnato gratis) è il punto di svolta dell'atto 2.
 
-## Coerenza cross-scena (cose che NON cambiano)
+## Possessore / luogo abituale
 
-_da popolare_
+—
+
+## Coerenza cross-scena
+
+- L'oggetto resta riconoscibile fra apparizioni
+- Stato consumato/usato non torna a "nuovo"
+- Posizione abituale rispettata salvo evento esplicito
 
 ## Variabilità ammessa
 
-_da popolare_
+- Stato d'uso (mezzo pieno/vuoto, polveroso, recente)
+- Ora/luce dell'apparizione
+- Persona che lo manipola
 
 ## Cliché da evitare
 
-_da popolare_
+- Estetica futuristica/holographic
+- Effetti visivi sovraccarichi
+- Trattamento "hero-shot" da pubblicità
 
 ## Storie / scene di apparizione
 
-_(generato automaticamente da build_catalog_index.py)_
+_(verra' compilato da build_catalog_index dopo distillazione)_
 
-## Disallineamenti / domande aperte
+## Riferimenti puntuali
 
-_(nessuno al momento della promozione)_
+- **`role_saga`**: travaso 1:1 da `progetto/story_graph.json#entities.objects.carico.role_saga`
+- **"Aspetto"**: derivazione da `progetto/_documenti_anima/originali_aila/GRAFO.md §OGGETTI.SIGNIFICATIVI` + capitoli scritti
 
-## Riferimenti puntuali (citazioni dirette dalle fonti)
+## Prompt Grok
 
-- **Promozione**: avvenuta il 2026-05-10 via `promote_entities_to_graph.py`
-- (altre derivazioni: `_da popolare_` man mano che il catalogatore arricchisce)
+```
+ART STYLE — California novel:
+cinematic film still, gritty hard sci-fi cargo aesthetic, lived-in industrial spaceship interiors,
+warm dim ambient lighting (amber + teal practicals), analog texture, condensation on metal pipes,
+scratched panels, no holographic interfaces, no sleek chrome, no clean Star Trek look.
+Visual references: Firefly's Serenity, The Expanse Rocinante, Alien (Nostromo) — but warmer, familial.
+Color palette: brass, oxidized copper, faded denim blue, off-white plastic, deep shadow.
+Grain: 35mm film, slight halation.
+NEGATIVE: chrome, sleek futuristic, glamour, holograms, transparent panels, military presence.
+
+OBJECT: Il carico (carico)
+ROLE: 32 container di marijuana dalla Terra (ufficialmente: materiale organico per ricerca agronomica); ragione del lavoro
+
+APPEARANCE: 32 industrial cargo containers, 2x2x2 meters each, painted faded green. Stenciled 'ORGANIC MATERIAL — AGRO RESEARCH — TEMP CONTROLLED 18°C'. Refrigeration vents on sides, barcode tag, slightly worn customs sticker. Perfect documentation. Looks completely legitimate
+
+USE / CONTEXT: Officially: organic material for agronomic research. Reality: marijuana from Earth, distributed by network to people in colonies who need it (not who pay most)
+
+VIEW: PRODUCT SHOT in the cargo hold under amber light, one container in foreground (label visible), others stacked behind
+
+Aspect ratio suggestion: 1:1 (product shot) or 4:3.
+```
