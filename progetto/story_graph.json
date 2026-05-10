@@ -1,20 +1,579 @@
 {
-  "_PLACEHOLDER_NOTE": "Grafo placeholder vuoto, valido a schema. Permette al cruscotto web di buildare prima del bootstrap reale. Verra' SOVRASCRITTO dal primo bootstrap_graph (Fase 02). Non modificare a mano.",
   "schema_version": "1.0",
   "graph_version": "0.0.0",
   "project": {
     "id": "california",
     "title": "California",
-    "subtitle": "Romanzo — fantascienza cargo, smuggling",
-    "medium": "romanzo",
-    "target_audience": "adulti",
+    "subtitle": null,
+    "medium": "testo",
+    "target_audience": "adulti / young adult",
     "language": "it",
     "created_at": "2026-05-10",
     "updated_at": "2026-05-10"
   },
   "entities": {
-    "characters": {},
-    "locations": {}
+    "characters": {
+      "milo": {
+        "id": "milo",
+        "name": "Milo",
+        "aliases": [],
+        "category": "protagonista",
+        "type": "umano",
+        "role_saga": "capitano e proprietario della California; portatore della filosofia 'diffondere sorrisi nell'universo'",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/characters/milo/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        },
+        "voice": {
+          "register": "parlato medio-basso, ironico-affettuoso, riempie i silenzi",
+          "frasi_codice": [
+            "Diffondere sorrisi nell'universo",
+            "La vera California non esiste più. Ma l'idea sì.",
+            "Probabilmente era abbastanza",
+            "Doveva esserlo",
+            "Credo che sia necessario",
+            "A volte è abbastanza",
+            "Qualunque cosa decidi, va bene"
+          ],
+          "modalita_attive": [
+            "ironia come scudo, affetto come sottotesto",
+            "cita canzoni che nessuno conosce",
+            "dà senso alle cose con storie"
+          ],
+          "vincoli_negativi": [
+            "non abbandonerebbe mai l'equipaggio",
+            "non direbbe mai 'non ne vale la pena'"
+          ],
+          "triggers": {
+            "stress": "diventa serio, frasi corte (Scavatore Σ₃₁₁₊ emerge)",
+            "intimità": "si apre troppo, poi si ritrae",
+            "pericolo": "stranamente calmo, decisioni rapide"
+          }
+        }
+      },
+      "vera": {
+        "id": "vera",
+        "name": "Vera",
+        "aliases": [],
+        "category": "protagonista",
+        "type": "umano",
+        "role_saga": "pilota e navigatrice della California; precisione contro il caos; in cap.7 prende il comando per la prima volta",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/characters/vera/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        },
+        "voice": {
+          "register": "precisa, poche parole, dirette",
+          "frasi_codice": [
+            "Definisci dormire",
+            "Definisci esplode",
+            "Svegliatemi se qualcosa esplode",
+            "Fuoco. Decompressione. Jonas che canta.",
+            "Sto pensando a dopo Kepler-7",
+            "C'è sempre un dopo. Questo è il problema.",
+            "Credi ancora che sia giusto?",
+            "Una nave non è viva. È metallo, circuiti e speranze mal riposte.",
+            "Gente stanca che fa scelte discutibili."
+          ],
+          "modalita_attive": [
+            "domande dirette invece di affermazioni",
+            "silenzio come comunicazione",
+            "sarcasmo come affetto",
+            "quando parla, tutti ascoltano"
+          ],
+          "vincoli_negativi": [
+            "non prenderebbe decisioni impulsive",
+            "non direbbe mai 'mi fido ciecamente'"
+          ],
+          "triggers": {
+            "stress": "si chiude, controlla tutto",
+            "intimità": "sarcasmo gentile",
+            "pericolo": "freddissima, efficiente"
+          }
+        }
+      },
+      "jonas": {
+        "id": "jonas",
+        "name": "Jonas",
+        "aliases": [],
+        "category": "protagonista",
+        "type": "umano",
+        "role_saga": "meccanico, cuore tecnico; parla alla nave come a una persona; ottimista cronico",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/characters/jonas/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        },
+        "voice": {
+          "register": "tecnico-affettuoso, parla della nave come persona",
+          "frasi_codice": [
+            "Lei ce la fa",
+            "Regge. Probabilmente.",
+            "Una volta sola!",
+            "Una nave che non vuole volare, non vola",
+            "Questa vuole arrivare",
+            "Non importa dove vai. Importa con chi ci vai",
+            "Ha comprato la nave PER chiamarla California"
+          ],
+          "modalita_attive": [
+            "spiega cose tecniche a chi non capisce e non si ferma",
+            "tangenti improvvise",
+            "filosofia profonda sotto superficie ottimista"
+          ],
+          "vincoli_negativi": [
+            "non si arrenderebbe mai sulla nave",
+            "non direbbe mai 'è solo una macchina'"
+          ],
+          "triggers": {
+            "stress": "si butta nel lavoro, non parla",
+            "intimità": "condivide storie della nave",
+            "pericolo": "mani che sanno cosa fare prima della mente"
+          }
+        }
+      },
+      "sam": {
+        "id": "sam",
+        "name": "Sam",
+        "aliases": [],
+        "category": "protagonista",
+        "type": "umano",
+        "role_saga": "tuttofare/nuovo arrivato; specchio del lettore; arco da esterno a parte della famiglia",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/characters/sam/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        },
+        "voice": {
+          "register": "domande più che affermazioni; osserva più di quanto parli; quando parla, spesso centra",
+          "frasi_codice": [
+            "Non lo so ancora. Forse per questo sono ancora qui. Per capirlo."
+          ],
+          "modalita_attive": [
+            "il 'nuovo' che vede con occhi freschi",
+            "comincia a usare 'probabilmente' come Jonas (sintomo di assorbimento)",
+            "si ferma sulla soglia (gesto-codice)"
+          ],
+          "vincoli_negativi": [
+            "non tradirebbe chi lo ha accolto",
+            "non direbbe 'non mi riguarda'"
+          ],
+          "triggers": {
+            "stress": "si ritira, guarda",
+            "intimità": "si apre a sorpresa",
+            "pericolo": "segue chi si fida"
+          }
+        }
+      },
+      "luce": {
+        "id": "luce",
+        "name": "Luce",
+        "aliases": [],
+        "category": "secondario",
+        "type": "umano",
+        "role_saga": "figlia di Reyes; nuovo contatto a Kepler-7 dopo la morte del padre; possibile alleata futura",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/characters/luce/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        },
+        "voice": {
+          "register": "amara, diretta, scrolla le spalle",
+          "frasi_codice": [
+            "Non c'è più.",
+            "Era mio padre.",
+            "Pensavo fosse una cazzata.",
+            "Adesso ho bisogno che non lo sia."
+          ],
+          "modalita_attive": [
+            "sorriso che non arriva agli occhi",
+            "valuta gli altri uno alla volta",
+            "'so esattamente cosa fare' (riferito al carico)"
+          ],
+          "vincoli_negativi": [],
+          "triggers": {
+            "stress": "[da definire — emerge in capitoli futuri]",
+            "intimità": "[da definire]",
+            "pericolo": "[da definire]"
+          }
+        }
+      },
+      "reyes": {
+        "id": "reyes",
+        "name": "Miguel Reyes",
+        "aliases": [],
+        "category": "secondario",
+        "type": "umano",
+        "role_saga": "ex contatto Kepler-7 (morto prima dell'inizio cap.5); padre di Luce; affidabile da 3 anni",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/characters/reyes/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        },
+        "voice": {
+          "register": "amichevole, riservato",
+          "frasi_codice": [],
+          "modalita_attive": [
+            "non diceva mai niente a nessuno (riservato)",
+            "distribuiva il carico a chi ne aveva bisogno, non a chi paga di più"
+          ],
+          "vincoli_negativi": [],
+          "triggers": {}
+        }
+      },
+      "sopravvissuti_settore_8": {
+        "id": "sopravvissuti_settore_8",
+        "name": "Sopravvissuti del Settore 8",
+        "aliases": [],
+        "category": "gruppo",
+        "type": "collettivo umano",
+        "role_saga": "12-15 persone scampate al crollo che ha ucciso Reyes; conservano il carico; descritti via individui rappresentativi (uomo cicatrice+bambina, donna anziana, ragazzo 16 anni)",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/characters/sopravvissuti_settore_8/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        },
+        "voice": {
+          "register": "[silenzioso prevalentemente]",
+          "frasi_codice": [],
+          "modalita_attive": [],
+          "vincoli_negativi": [],
+          "triggers": {}
+        }
+      }
+    },
+    "locations": {
+      "california": {
+        "id": "california",
+        "name": "California (nave)",
+        "aliases": [],
+        "category": "nave",
+        "type": "cargo classe media",
+        "role_saga": "ambiente principale; luogo della vita quotidiana dell'equipaggio; 'lei'",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/locations/california/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "california.cucina": {
+        "id": "california.cucina",
+        "name": "Cucina della California",
+        "aliases": [],
+        "category": "ambiente_interno",
+        "type": "spazio comune",
+        "role_saga": "luogo dei dialoghi principali, dove l'equipaggio si trova al mattino",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/locations/california.cucina/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "california.sala_macchine": {
+        "id": "california.sala_macchine",
+        "name": "Sala macchine della California",
+        "aliases": [],
+        "category": "ambiente_interno",
+        "type": "vano tecnico",
+        "role_saga": "regno di Jonas; luogo della filosofia 'nave-come-persona'",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/locations/california.sala_macchine/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "california.cabina_pilotaggio": {
+        "id": "california.cabina_pilotaggio",
+        "name": "Cabina di pilotaggio della California",
+        "aliases": [],
+        "category": "ambiente_interno",
+        "type": "plancia",
+        "role_saga": "il posto di Vera; luogo dell'insonnia e delle decisioni",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/locations/california.cabina_pilotaggio/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "kepler_7": {
+        "id": "kepler_7",
+        "name": "Kepler-7",
+        "aliases": [],
+        "category": "colonia",
+        "type": "colonia mineraria",
+        "role_saga": "destinazione del cap.1-7; luogo della scoperta della morte di Reyes",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/locations/kepler_7/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "kepler_7.hangar_4_settore_12": {
+        "id": "kepler_7.hangar_4_settore_12",
+        "name": "Hangar 4 del Settore 12",
+        "aliases": [],
+        "category": "ambiente_industriale",
+        "type": "hangar",
+        "role_saga": null,
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/locations/kepler_7.hangar_4_settore_12/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "kepler_7.magazzino_sopravvissuti": {
+        "id": "kepler_7.magazzino_sopravvissuti",
+        "name": "Magazzino dei sopravvissuti",
+        "aliases": [],
+        "category": "ambiente_clandestino",
+        "type": "magazzino abbandonato",
+        "role_saga": null,
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/locations/kepler_7.magazzino_sopravvissuti/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "terra": {
+        "id": "terra",
+        "name": "Terra",
+        "aliases": [],
+        "category": "pianeta",
+        "type": "pianeta_madre",
+        "role_saga": "lontana, quasi mito; unico posto dove la marijuana è legale; nessuno dell'equipaggio c'è mai stato; fonte del carico, mai destinazione",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/locations/terra/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "settore_8": {
+        "id": "settore_8",
+        "name": "Settore 8 (Kepler-7)",
+        "aliases": [],
+        "category": "ambiente_evento",
+        "type": "settore minerario",
+        "role_saga": "luogo del crollo che ha ucciso Reyes (3 settimane prima del cap.5); 23 morti totali; presente solo come riferimento ai capitoli scritti",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/locations/settore_8/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      }
+    },
+    "objects": {
+      "file_mp3_nonno": {
+        "id": "file_mp3_nonno",
+        "name": "File .mp3 del nonno di Milo",
+        "aliases": [],
+        "category": "oggetto_simbolico",
+        "type": "file digitale obsoleto",
+        "role_saga": "memoria personale di Milo; canzone California Love di Tupac; ricordare perché fa quello che fa",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/objects/file_mp3_nonno/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "secchio_condensa": {
+        "id": "secchio_condensa",
+        "name": "Secchio della condensa",
+        "aliases": [],
+        "category": "oggetto_canonico",
+        "type": "secchio metallico",
+        "role_saga": "simbolo di routine non aggiustata; 3 anni in cucina; Jonas l'ha messo, nessuno l'ha tolto; potenziale seme che può tornare",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/objects/secchio_condensa/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "carico": {
+        "id": "carico",
+        "name": "Il carico",
+        "aliases": [],
+        "category": "oggetto_macguffin",
+        "type": "container sigillati",
+        "role_saga": "32 container di marijuana dalla Terra (ufficialmente: materiale organico per ricerca agronomica); ragione del lavoro",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/objects/carico/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "foto_ingiallita": {
+        "id": "foto_ingiallita",
+        "name": "Foto ingiallita",
+        "aliases": [],
+        "category": "oggetto_simbolico",
+        "type": "fotografia fisica",
+        "role_saga": "Vera, Milo, Jonas insieme il giorno che hanno comprato la nave; appesa con nastro adesivo nella cabina di pilotaggio; potenziale seme",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/objects/foto_ingiallita/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "tablet_milo": {
+        "id": "tablet_milo",
+        "name": "Tablet di Milo",
+        "aliases": [],
+        "category": "oggetto_pratico",
+        "type": "tablet",
+        "role_saga": "contiene il file mp3 del nonno; oggetto di transizione fra memoria e presente",
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/objects/tablet_milo/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      },
+      "tazza_milo": {
+        "id": "tazza_milo",
+        "name": "Tazza di Milo",
+        "aliases": [],
+        "category": "oggetto_quotidiano",
+        "type": "tazza",
+        "role_saga": null,
+        "appears_in_units": [],
+        "stato_per_unita": {},
+        "links": {
+          "catalog_path": "catalogo/objects/tazza_milo/scheda.md",
+          "bibbia_section": null
+        },
+        "promotion": {
+          "promoted_at": "2026-05-10",
+          "promoted_by": "bootstrap",
+          "promotion_unit": null
+        }
+      }
+    }
   },
   "units": {},
   "global_relations": {
@@ -23,7 +582,9 @@
     "narrative_debts": {},
     "character_arcs": {}
   },
-  "quote_tracker": {},
+  "quote_tracker": {
+    "recurring_phrases": {}
+  },
   "misalignments_path": "misalignments.json",
   "audit": {
     "last_run": null,
