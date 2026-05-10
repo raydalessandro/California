@@ -1,0 +1,785 @@
+{
+  "_description": "Glossario-consegna California — output di Fase 01 ideazione, input di Fase 02 bootstrap_graph. Derivato da GRAFO.md + DNA.md autoriali. Formato consumabile da _scripts/bootstrap_graph.py.",
+  "_source": "Convertito da DNA.md + GRAFO.md (sintassi #AILA:1.0) il 2026-05-10",
+
+  "project": {
+    "id": "california",
+    "title": "California",
+    "subtitle": null,
+    "medium": "testo",
+    "target_audience": "adulti / young adult",
+    "language": "it",
+    "genre": "fantascienza (cargo spaceship, smuggling)",
+    "tone": "caldo, ironico, familiare — con tensioni reali",
+    "tema_centrale": "fare la cosa giusta in un universo che non lo permette",
+    "lunghezza_prevista": "30+ pagine, 15-20 capitoli",
+    "riferimenti": ["Firefly", "The Expanse", "Alien (senza alieno)"],
+    "themes": [
+      "appartenenza",
+      "giustificazione (è giusto o ce lo raccontiamo?)",
+      "routine come legame",
+      "abbastanza come filosofia di vita",
+      "il mito vs la realtà"
+    ]
+  },
+
+  "entities": {
+    "characters": {
+      "milo": {
+        "id": "milo",
+        "name": "Milo",
+        "category": "protagonista",
+        "type": "umano",
+        "role_saga": "capitano e proprietario della California; portatore della filosofia 'diffondere sorrisi nell'universo'",
+        "age": "40+",
+        "physical": {
+          "capelli": "ora grigi (erano scuri 10 anni fa)",
+          "altri_dettagli": "[da definire / arricchire]"
+        },
+        "voice": {
+          "register": "parlato medio-basso, ironico-affettuoso, riempie i silenzi",
+          "frasi_codice": [
+            "Diffondere sorrisi nell'universo",
+            "La vera California non esiste più. Ma l'idea sì.",
+            "Probabilmente era abbastanza",
+            "Doveva esserlo",
+            "Credo che sia necessario",
+            "A volte è abbastanza",
+            "Qualunque cosa decidi, va bene"
+          ],
+          "modalita_attive": [
+            "ironia come scudo, affetto come sottotesto",
+            "cita canzoni che nessuno conosce",
+            "dà senso alle cose con storie"
+          ],
+          "vincoli_negativi": [
+            "non abbandonerebbe mai l'equipaggio",
+            "non direbbe mai 'non ne vale la pena'"
+          ],
+          "triggers": {
+            "stress": "diventa serio, frasi corte (Scavatore Σ₃₁₁₊ emerge)",
+            "intimità": "si apre troppo, poi si ritrae",
+            "pericolo": "stranamente calmo, decisioni rapide"
+          }
+        },
+        "sigma_mix": {
+          "dom": { "code": "Σ₄₂₃₊", "name": "Narratore", "weight": 0.55 },
+          "sec": { "code": "Σ₂₃₂₊", "name": "Spiralista", "weight": 0.30 },
+          "lat": { "code": "Σ₃₁₁₊", "name": "Scavatore", "weight": 0.15 }
+        },
+        "arc_summary": "messo alla prova nella sua fede in quello che fa; deve scegliere tra sicurezza e missione; mix Σ stabile, ma Scavatore cresce. Cap.7: per la prima volta non guida, segue Vera.",
+        "appears_in_units": ["cap_01", "cap_02", "cap_03", "cap_04", "cap_05", "cap_06", "cap_07"]
+      },
+
+      "vera": {
+        "id": "vera",
+        "name": "Vera",
+        "category": "protagonista",
+        "type": "umano",
+        "role_saga": "pilota e navigatrice della California; precisione contro il caos; in cap.7 prende il comando per la prima volta",
+        "age": "35",
+        "physical": {
+          "altri_dettagli": "[da definire]"
+        },
+        "voice": {
+          "register": "precisa, poche parole, dirette",
+          "frasi_codice": [
+            "Definisci dormire",
+            "Definisci esplode",
+            "Svegliatemi se qualcosa esplode",
+            "Fuoco. Decompressione. Jonas che canta.",
+            "Sto pensando a dopo Kepler-7",
+            "C'è sempre un dopo. Questo è il problema.",
+            "Credi ancora che sia giusto?",
+            "Una nave non è viva. È metallo, circuiti e speranze mal riposte.",
+            "Gente stanca che fa scelte discutibili."
+          ],
+          "modalita_attive": [
+            "domande dirette invece di affermazioni",
+            "silenzio come comunicazione",
+            "sarcasmo come affetto",
+            "quando parla, tutti ascoltano"
+          ],
+          "vincoli_negativi": [
+            "non prenderebbe decisioni impulsive",
+            "non direbbe mai 'mi fido ciecamente'"
+          ],
+          "triggers": {
+            "stress": "si chiude, controlla tutto",
+            "intimità": "sarcasmo gentile",
+            "pericolo": "freddissima, efficiente"
+          }
+        },
+        "sigma_mix": {
+          "dom": { "code": "Σ₁₃₃₊", "name": "Cartografo", "weight": 0.50 },
+          "sec": { "code": "Σ₃₁₃₊", "name": "Membranista", "weight": 0.35 },
+          "lat": { "code": "Σ₂₂₃₊", "name": "Networker", "weight": 0.15 }
+        },
+        "arc_summary": "dubita della missione (non del carico, del rischio); deve scegliere se restare; Membranista cresce, poi forse cede. Cap.7: ha preso comando, ha scelto sacrificio.",
+        "appears_in_units": ["cap_01", "cap_03", "cap_04", "cap_05", "cap_06", "cap_07"]
+      },
+
+      "jonas": {
+        "id": "jonas",
+        "name": "Jonas",
+        "category": "protagonista",
+        "type": "umano",
+        "role_saga": "meccanico, cuore tecnico; parla alla nave come a una persona; ottimista cronico",
+        "age": "28",
+        "physical": {
+          "mani": "spesso sporche di grasso",
+          "altro": "grasso sulla fronte"
+        },
+        "voice": {
+          "register": "tecnico-affettuoso, parla della nave come persona",
+          "frasi_codice": [
+            "Lei ce la fa",
+            "Regge. Probabilmente.",
+            "Una volta sola!",
+            "Una nave che non vuole volare, non vola",
+            "Questa vuole arrivare",
+            "Non importa dove vai. Importa con chi ci vai",
+            "Ha comprato la nave PER chiamarla California"
+          ],
+          "modalita_attive": [
+            "spiega cose tecniche a chi non capisce e non si ferma",
+            "tangenti improvvise",
+            "filosofia profonda sotto superficie ottimista"
+          ],
+          "vincoli_negativi": [
+            "non si arrenderebbe mai sulla nave",
+            "non direbbe mai 'è solo una macchina'"
+          ],
+          "triggers": {
+            "stress": "si butta nel lavoro, non parla",
+            "intimità": "condivide storie della nave",
+            "pericolo": "mani che sanno cosa fare prima della mente"
+          }
+        },
+        "sigma_mix": {
+          "dom": { "code": "Σ₃₂₃₊", "name": "Organicista", "weight": 0.55 },
+          "sec": { "code": "Σ₂₃₂₊", "name": "Spiralista", "weight": 0.30 },
+          "lat": { "code": "Σ₃₁₁₊", "name": "Scavatore", "weight": 0.15 }
+        },
+        "arc_summary": "la nave viene messa alla prova; deve accettare che non può salvare tutto; Scavatore emerge più spesso. Cap.7: scarica tutto, sorride da bambino.",
+        "appears_in_units": ["cap_01", "cap_02", "cap_05", "cap_06", "cap_07"]
+      },
+
+      "sam": {
+        "id": "sam",
+        "name": "Sam",
+        "category": "protagonista",
+        "type": "umano",
+        "role_saga": "tuttofare/nuovo arrivato; specchio del lettore; arco da esterno a parte della famiglia",
+        "age": "23",
+        "physical": {
+          "capelli": "neri sparati in tutte le direzioni"
+        },
+        "voice": {
+          "register": "domande più che affermazioni; osserva più di quanto parli; quando parla, spesso centra",
+          "frasi_codice": [
+            "Non lo so ancora. Forse per questo sono ancora qui. Per capirlo."
+          ],
+          "modalita_attive": [
+            "il 'nuovo' che vede con occhi freschi",
+            "comincia a usare 'probabilmente' come Jonas (sintomo di assorbimento)",
+            "si ferma sulla soglia (gesto-codice)"
+          ],
+          "vincoli_negativi": [
+            "non tradirebbe chi lo ha accolto",
+            "non direbbe 'non mi riguarda'"
+          ],
+          "triggers": {
+            "stress": "si ritira, guarda",
+            "intimità": "si apre a sorpresa",
+            "pericolo": "segue chi si fida"
+          }
+        },
+        "sigma_mix": {
+          "dom": { "code": "Σ₂₁₃₋", "name": "Nomade", "weight": 0.50 },
+          "sec": { "code": "Σ₄₂₁₋", "name": "Sincronista", "weight": 0.30 },
+          "lat": { "code": "Σ₂₂₃₊", "name": "Networker", "weight": 0.20 }
+        },
+        "arc_summary": "da esterno a parte della famiglia; Networker cresce, Nomade diminuisce; trova casa. Cap.7: shift completo (\"solo adesso capisco\").",
+        "appears_in_units": ["cap_01", "cap_02", "cap_05", "cap_06", "cap_07"]
+      },
+
+      "luce": {
+        "id": "luce",
+        "name": "Luce",
+        "category": "secondario",
+        "type": "umano",
+        "role_saga": "figlia di Reyes; nuovo contatto a Kepler-7 dopo la morte del padre; possibile alleata futura",
+        "age": "~20",
+        "physical": {
+          "capelli": "corti, tagliati male (come da sola con un coltello)",
+          "occhi": "grandi, scuri, troppo vecchi per quel viso giovane",
+          "abbigliamento": "tuta da lavoro grigia, portata 'come costume'"
+        },
+        "voice": {
+          "register": "amara, diretta, scrolla le spalle",
+          "frasi_codice": [
+            "Non c'è più.",
+            "Era mio padre.",
+            "Pensavo fosse una cazzata.",
+            "Adesso ho bisogno che non lo sia."
+          ],
+          "modalita_attive": [
+            "sorriso che non arriva agli occhi",
+            "valuta gli altri uno alla volta",
+            "'so esattamente cosa fare' (riferito al carico)"
+          ],
+          "vincoli_negativi": [],
+          "triggers": {
+            "stress": "[da definire — emerge in capitoli futuri]",
+            "intimità": "[da definire]",
+            "pericolo": "[da definire]"
+          }
+        },
+        "sigma_mix": null,
+        "arc_summary": "da estranea diffidente a possibile alleata; cap.7 sorride per la prima volta",
+        "appears_in_units": ["cap_05", "cap_06", "cap_07"]
+      },
+
+      "reyes": {
+        "id": "reyes",
+        "name": "Miguel Reyes",
+        "category": "secondario",
+        "type": "umano",
+        "role_saga": "ex contatto Kepler-7 (morto prima dell'inizio cap.5); padre di Luce; affidabile da 3 anni",
+        "age": "[non specificato]",
+        "status": "MORTO (crollo Settore 8, 3 settimane prima del cap.5)",
+        "physical": {
+          "altri_dettagli": "[ricostruito solo via riferimenti — sorriso, battuta sul caffè sintetico]"
+        },
+        "voice": {
+          "register": "amichevole, riservato",
+          "frasi_codice": [],
+          "modalita_attive": [
+            "non diceva mai niente a nessuno (riservato)",
+            "distribuiva il carico a chi ne aveva bisogno, non a chi paga di più"
+          ],
+          "vincoli_negativi": [],
+          "triggers": {}
+        },
+        "sigma_mix": null,
+        "arc_summary": "personaggio assente in scena, presente come fantasma morale. Pagamento per il carico cap.7 era già avvenuto (con i suoi risparmi).",
+        "appears_in_units": []
+      },
+
+      "sopravvissuti_settore_8": {
+        "id": "sopravvissuti_settore_8",
+        "name": "Sopravvissuti del Settore 8",
+        "category": "gruppo",
+        "type": "collettivo umano",
+        "role_saga": "12-15 persone scampate al crollo che ha ucciso Reyes; conservano il carico; descritti via individui rappresentativi (uomo cicatrice+bambina, donna anziana, ragazzo 16 anni)",
+        "physical": {
+          "stato": "sguardo di chi ha smesso di aspettarsi qualcosa"
+        },
+        "voice": {
+          "register": "[silenzioso prevalentemente]",
+          "frasi_codice": [],
+          "modalita_attive": [],
+          "vincoli_negativi": [],
+          "triggers": {}
+        },
+        "sigma_mix": null,
+        "arc_summary": "gruppo morale: ciò per cui l'equipaggio fa quello che fa",
+        "appears_in_units": ["cap_05", "cap_06", "cap_07"]
+      }
+    },
+
+    "locations": {
+      "california": {
+        "id": "california",
+        "name": "California (nave)",
+        "category": "nave",
+        "type": "cargo classe media",
+        "role_saga": "ambiente principale; luogo della vita quotidiana dell'equipaggio; 'lei'",
+        "physical": {
+          "dimensioni": "80 metri",
+          "atmosfera_dominante": "metallo vissuto, condensa, ronzio costante",
+          "odore": "metallo caldo, refrigerante, olio motore",
+          "suono": "ronzio ventilazione, generatori, battito meccanico",
+          "vista": "condensa sui tubi, metallo vissuto"
+        },
+        "sub_locations": [
+          "california.cucina",
+          "california.corridoio_principale",
+          "california.sala_macchine",
+          "california.cabina_pilotaggio",
+          "california.cabine_equipaggio",
+          "california.stiva_carico"
+        ],
+        "appears_in_units": ["cap_01", "cap_02", "cap_03", "cap_04", "cap_06", "cap_07"]
+      },
+
+      "california.cucina": {
+        "id": "california.cucina",
+        "name": "Cucina della California",
+        "category": "ambiente_interno",
+        "type": "spazio comune",
+        "parent_id": "california",
+        "role_saga": "luogo dei dialoghi principali, dove l'equipaggio si trova al mattino",
+        "physical": {
+          "dimensioni": "3 metri per 2",
+          "posizione": "incastrata fra corridoio principale e paratia serbatoio acqua",
+          "arredo": "tavolo pieghevole, due sgabelli saldati al pavimento, bancone ex-bianco, forno rotto (da prima che Milo comprasse la nave), finestrino",
+          "dettagli_canonici": "secchio condensa nell'angolo (3 anni)"
+        },
+        "appears_in_units": ["cap_01"]
+      },
+
+      "california.sala_macchine": {
+        "id": "california.sala_macchine",
+        "name": "Sala macchine della California",
+        "category": "ambiente_interno",
+        "type": "vano tecnico",
+        "parent_id": "california",
+        "role_saga": "regno di Jonas; luogo della filosofia 'nave-come-persona'",
+        "physical": {
+          "atmosfera": "il posto più caldo, rumoroso e stretto della nave",
+          "arredo": "tubi come vene metalliche sul soffitto, pannelli aperti con cavi che pendono, attrezzi sparsi, vano propulsore nel pavimento, tavolo attrezzi con chiavi",
+          "dettagli_canonici": "caos organizzato"
+        },
+        "appears_in_units": ["cap_02"]
+      },
+
+      "california.cabina_pilotaggio": {
+        "id": "california.cabina_pilotaggio",
+        "name": "Cabina di pilotaggio della California",
+        "category": "ambiente_interno",
+        "type": "plancia",
+        "parent_id": "california",
+        "role_saga": "il posto di Vera; luogo dell'insonnia e delle decisioni",
+        "physical": {
+          "arredo": "poltrona pilota (di Vera), poltrona copilota mai usata, vista stelle",
+          "dettagli_canonici": "foto ingiallita con nastro adesivo (lei/Milo/Jonas, giorno acquisto nave)"
+        },
+        "appears_in_units": ["cap_03"]
+      },
+
+      "kepler_7": {
+        "id": "kepler_7",
+        "name": "Kepler-7",
+        "category": "colonia",
+        "type": "colonia mineraria",
+        "role_saga": "destinazione del cap.1-7; luogo della scoperta della morte di Reyes",
+        "physical": {
+          "popolazione": "~8000",
+          "attivita": "estrazione litio",
+          "condizioni_lavoro": "turni 14h, 6 giorni su 7",
+          "atmosfera_dominante": "zolfo e sudore, aria densa pesante, ventilazione apparentemente non funzionante"
+        },
+        "sub_locations": [
+          "kepler_7.hangar_4_settore_12",
+          "kepler_7.corridoio_verso_magazzino",
+          "kepler_7.magazzino_sopravvissuti"
+        ],
+        "appears_in_units": ["cap_05", "cap_06", "cap_07"]
+      },
+
+      "kepler_7.hangar_4_settore_12": {
+        "id": "kepler_7.hangar_4_settore_12",
+        "name": "Hangar 4 del Settore 12",
+        "category": "ambiente_industriale",
+        "type": "hangar",
+        "parent_id": "kepler_7",
+        "physical": {
+          "atmosfera": "capannone metallo grigio, soffitto basso, luci ronzano come insetti morenti, altre navi cargo parcheggiate"
+        },
+        "appears_in_units": ["cap_05"]
+      },
+
+      "kepler_7.magazzino_sopravvissuti": {
+        "id": "kepler_7.magazzino_sopravvissuti",
+        "name": "Magazzino dei sopravvissuti",
+        "category": "ambiente_clandestino",
+        "type": "magazzino abbandonato",
+        "parent_id": "kepler_7",
+        "physical": {
+          "atmosfera": "scaffali vuoti, polvere, materassi improvvisati"
+        },
+        "appears_in_units": ["cap_05", "cap_06", "cap_07"]
+      },
+
+      "terra": {
+        "id": "terra",
+        "name": "Terra",
+        "category": "pianeta",
+        "type": "pianeta_madre",
+        "role_saga": "lontana, quasi mito; unico posto dove la marijuana è legale; nessuno dell'equipaggio c'è mai stato; fonte del carico, mai destinazione",
+        "physical": {
+          "status_narrativo": "presente come riferimento, mai mostrato in scena"
+        },
+        "appears_in_units": []
+      },
+
+      "settore_8": {
+        "id": "settore_8",
+        "name": "Settore 8 (Kepler-7)",
+        "category": "ambiente_evento",
+        "type": "settore minerario",
+        "parent_id": "kepler_7",
+        "role_saga": "luogo del crollo che ha ucciso Reyes (3 settimane prima del cap.5); 23 morti totali; presente solo come riferimento ai capitoli scritti",
+        "appears_in_units": []
+      }
+    },
+
+    "objects": {
+      "file_mp3_nonno": {
+        "id": "file_mp3_nonno",
+        "name": "File .mp3 del nonno di Milo",
+        "category": "oggetto_simbolico",
+        "type": "file digitale obsoleto",
+        "role_saga": "memoria personale di Milo; canzone California Love di Tupac; ricordare perché fa quello che fa",
+        "physical": {
+          "formato": ".mp3 (obsoleto, 6 mesi e una piccola fortuna per convertirlo)",
+          "contenuto": "California Love (Tupac Shakur, 1996)",
+          "stato": "vissuto, raramente ascoltato, sempre in solitudine"
+        },
+        "owner": "milo",
+        "appears_in_units": ["cap_01"]
+      },
+
+      "secchio_condensa": {
+        "id": "secchio_condensa",
+        "name": "Secchio della condensa",
+        "category": "oggetto_canonico",
+        "type": "secchio metallico",
+        "role_saga": "simbolo di routine non aggiustata; 3 anni in cucina; Jonas l'ha messo, nessuno l'ha tolto; potenziale seme che può tornare",
+        "physical": {
+          "posizione": "angolo cucina California",
+          "stato": "lì da 3 anni, raccoglie condensa che gocciola dal soffitto"
+        },
+        "appears_in_units": ["cap_01"]
+      },
+
+      "carico": {
+        "id": "carico",
+        "name": "Il carico",
+        "category": "oggetto_macguffin",
+        "type": "container sigillati",
+        "role_saga": "32 container di marijuana dalla Terra (ufficialmente: materiale organico per ricerca agronomica); ragione del lavoro",
+        "physical": {
+          "quantita": "32 container sigillati",
+          "stato": "temperatura costante, nessuna perdita",
+          "documentazione": "perfetta (Milo paga bene per quello)"
+        },
+        "appears_in_units": ["cap_01", "cap_06", "cap_07"]
+      },
+
+      "foto_ingiallita": {
+        "id": "foto_ingiallita",
+        "name": "Foto ingiallita",
+        "category": "oggetto_simbolico",
+        "type": "fotografia fisica",
+        "role_saga": "Vera, Milo, Jonas insieme il giorno che hanno comprato la nave; appesa con nastro adesivo nella cabina di pilotaggio; potenziale seme",
+        "physical": {
+          "stato": "ingiallita dal tempo",
+          "supporto": "nastro adesivo",
+          "posizione": "cabina di pilotaggio della California"
+        },
+        "appears_in_units": ["cap_03"]
+      },
+
+      "tablet_milo": {
+        "id": "tablet_milo",
+        "name": "Tablet di Milo",
+        "category": "oggetto_pratico",
+        "type": "tablet",
+        "owner": "milo",
+        "role_saga": "contiene il file mp3 del nonno; oggetto di transizione fra memoria e presente",
+        "physical": {
+          "posizione": "taschino di Milo"
+        },
+        "appears_in_units": ["cap_01"]
+      },
+
+      "tazza_milo": {
+        "id": "tazza_milo",
+        "name": "Tazza di Milo",
+        "category": "oggetto_quotidiano",
+        "type": "tazza",
+        "owner": "milo",
+        "appears_in_units": ["cap_01"]
+      }
+    }
+  },
+
+  "global_relations": {
+    "narrative_promises_initial": [
+      {
+        "id": "S001_file_mp3",
+        "description": "Il file .mp3 del nonno di Milo come ricordo del perché fa quello che fa",
+        "planted_in": "cap_01",
+        "status": "maturing"
+      },
+      {
+        "id": "S002_secchio_condensa",
+        "description": "Il secchio della condensa, 3 anni nello stesso angolo",
+        "planted_in": "cap_01",
+        "status": "planted"
+      },
+      {
+        "id": "S003_sam_appartiene",
+        "description": "Sam appartiene a questo equipaggio? (gesto soglia, dubbio interno)",
+        "planted_in": "cap_01",
+        "status": "blooming"
+      },
+      {
+        "id": "S004_propulsore_secondo",
+        "description": "Il secondo propulsore regge?",
+        "planted_in": "cap_01",
+        "status": "maturing"
+      },
+      {
+        "id": "S005_vera_decide",
+        "description": "Vera deciderà se restare dopo Kepler-7",
+        "planted_in": "cap_03",
+        "status": "blooming"
+      },
+      {
+        "id": "S006_carico_diffondere_sorrisi",
+        "description": "Il senso del lavoro: per chi è il carico, perché lo fanno",
+        "planted_in": "cap_01",
+        "status": "blooming"
+      },
+      {
+        "id": "S007_foto_ingiallita",
+        "description": "La foto Vera/Milo/Jonas del giorno acquisto nave",
+        "planted_in": "cap_03",
+        "status": "planted"
+      },
+      {
+        "id": "S008_pagamento_mancato",
+        "description": "Reyes morto = pagamento non arriva = come tornano senza soldi?",
+        "planted_in": "cap_07",
+        "status": "planted"
+      },
+      {
+        "id": "S009_tensione_milo_vera",
+        "description": "Milo non era d'accordo con la decisione di scaricare gratis",
+        "planted_in": "cap_07",
+        "status": "planted"
+      },
+      {
+        "id": "S010_luce_alleata",
+        "description": "Luce sorride per la prima volta — possibile contatto stabile?",
+        "planted_in": "cap_07",
+        "status": "planted"
+      },
+      {
+        "id": "S011_sopravvissuti_settore_8",
+        "description": "Cosa ne sarà dei sopravvissuti del Settore 8?",
+        "planted_in": "cap_05",
+        "status": "maturing"
+      },
+      {
+        "id": "S012_sam_non_dorme",
+        "description": "Luce sotto la porta di Sam (cap.3): perché non dorme?",
+        "planted_in": "cap_03",
+        "status": "planted"
+      }
+    ],
+
+    "narrative_debts_initial": [
+      {
+        "id": "D001_economia",
+        "description": "Risolvere economia: come si paga il prossimo carico/carburante?",
+        "opened_in": "cap_07"
+      },
+      {
+        "id": "D002_milo_vera",
+        "description": "Tensione Milo/Vera dopo decisione di scaricare gratis",
+        "opened_in": "cap_07"
+      },
+      {
+        "id": "D003_distribuzione_kepler",
+        "description": "Cosa fa la rete di distribuzione su Kepler-7 senza Reyes?",
+        "opened_in": "cap_05"
+      },
+      {
+        "id": "D004_sopravvissuti",
+        "description": "Sopravvissuti Settore 8: ricaduta morale/operativa?",
+        "opened_in": "cap_05"
+      }
+    ],
+
+    "character_pairs": [
+      {
+        "id": "milo_vera",
+        "characters": ["milo", "vera"],
+        "type": "vecchi compagni, tensione mai risolta",
+        "duration": "10 anni",
+        "dynamic": "lui parla troppo, lei taglia; si fidano con la vita non con i sentimenti; comunicazione non verbale"
+      },
+      {
+        "id": "milo_jonas",
+        "characters": ["milo", "jonas"],
+        "type": "padre/figlio non detto",
+        "duration": "10 anni",
+        "dynamic": "Milo racconta storie, Jonas ascolta e aggiusta; Jonas è l'ottimismo che Milo ha perso"
+      },
+      {
+        "id": "vera_jonas",
+        "characters": ["vera", "jonas"],
+        "type": "rispetto professionale",
+        "duration": "10 anni",
+        "dynamic": "lei pianifica, lui esegue; poche parole, molta fiducia"
+      },
+      {
+        "id": "milo_sam",
+        "characters": ["milo", "sam"],
+        "type": "capitano/nuovo",
+        "duration": "4 mesi",
+        "dynamic": "Milo spiega perché fanno quello che fanno"
+      },
+      {
+        "id": "jonas_sam",
+        "characters": ["jonas", "sam"],
+        "type": "mentor/allievo",
+        "duration": "4 mesi",
+        "dynamic": "insegna lavorando, condivide filosofia"
+      },
+      {
+        "id": "jonas_california",
+        "characters": ["jonas", "california"],
+        "type": "quasi personale",
+        "dynamic": "filosofia nave-viva; 'lei ce la fa', 'vuole essere riparata'"
+      }
+    ],
+
+    "recurring_motifs": [
+      {
+        "id": "soglia_sam",
+        "description": "Sam si ferma sulla soglia delle stanze (gesto-codice)",
+        "occurrences": ["cap_01", "cap_02"]
+      },
+      {
+        "id": "stelle_sempre_uguali",
+        "description": "Le stelle che sembrano sempre le stesse",
+        "occurrences": ["cap_01", "cap_03"]
+      },
+      {
+        "id": "10_anni",
+        "description": "Riferimento ai 10 anni Milo/Vera/Jonas",
+        "occurrences": ["cap_01", "cap_03", "cap_07"]
+      },
+      {
+        "id": "definisci_x",
+        "description": "Pattern Definisci [X] (dialogo Vera/Milo)",
+        "occurrences": ["cap_01", "cap_03"]
+      },
+      {
+        "id": "probabilmente",
+        "description": "La parola 'probabilmente' contagiosa fra personaggi",
+        "occurrences": ["cap_01", "cap_02"]
+      },
+      {
+        "id": "abbastanza",
+        "description": "La filosofia del 'abbastanza' / 'doveva esserlo' di Milo",
+        "occurrences": ["cap_01", "cap_07"]
+      }
+    ]
+  },
+
+  "quote_tracker_initial": {
+    "definisci_x": { "max_total": 8, "used": 4 },
+    "probabilmente": { "max_total": 15, "used": 3 },
+    "abbastanza_doveva_esserlo": { "max_total": 6, "used": 2 },
+    "lei_ce_la_fa": { "max_total": 4, "used": 2 },
+    "diffondere_sorrisi": { "max_total": 2, "used": 1 },
+    "california_love_riferimento": { "max_total": 3, "used": 1 },
+    "soglia_sam": { "max_total": 4, "used": 2 }
+  },
+
+  "units_initial": {
+    "cap_01": {
+      "id": "cap_01",
+      "title": "Caffè all'olio motore",
+      "slug": "caffe_olio_motore",
+      "position": 1,
+      "block_id": "atto_1",
+      "estimated_length_words": 1100,
+      "actual_length_words": 1100,
+      "status": "scritto",
+      "narrazione_fattuale_path": "narrazione_fattuale/cap_01.md",
+      "testo_finale_path": "testi_finali/cap_01.md",
+      "primary_location_id": "california.cucina",
+      "ambient_conditions": {
+        "tempo": "mattino presto",
+        "atmosfera": "routine, prime crepe percepibili"
+      },
+      "premise": "Il caffè della California sa di olio motore: Jonas ha lavorato tutta la notte sul filtro del secondo propulsore. L'equipaggio si trova in cucina mentre la nave si avvicina a Kepler-7.",
+      "problem": "Il propulsore regge? Sam appartiene davvero a questo equipaggio?",
+      "threshold_moment": "L'esitazione di Jonas quando Milo gli chiede se il propulsore regge davvero — *Probabilmente*.",
+      "resolution_mode": "*Probabilmente è abbastanza. Doveva esserlo*. Milo accetta l'incertezza."
+    },
+    "cap_02": {
+      "id": "cap_02",
+      "title": "Sala macchine",
+      "slug": "sala_macchine",
+      "position": 2,
+      "block_id": "atto_1",
+      "actual_length_words": 1000,
+      "status": "scritto",
+      "narrazione_fattuale_path": "narrazione_fattuale/cap_02.md",
+      "testo_finale_path": "testi_finali/cap_02.md",
+      "primary_location_id": "california.sala_macchine"
+    },
+    "cap_03": {
+      "id": "cap_03",
+      "title": "Notte insonne",
+      "slug": "notte_insonne",
+      "position": 3,
+      "block_id": "atto_1",
+      "actual_length_words": 1100,
+      "status": "scritto",
+      "narrazione_fattuale_path": "narrazione_fattuale/cap_03.md",
+      "testo_finale_path": "testi_finali/cap_03.md",
+      "primary_location_id": "california.cabina_pilotaggio"
+    },
+    "cap_04": {
+      "id": "cap_04",
+      "title": "Allarme di prossimità",
+      "slug": "allarme_prossimita",
+      "position": 4,
+      "block_id": "atto_1",
+      "status": "scritto",
+      "narrazione_fattuale_path": "narrazione_fattuale/cap_04.md",
+      "testo_finale_path": "testi_finali/cap_04.md"
+    },
+    "cap_05": {
+      "id": "cap_05",
+      "title": "Kepler-7",
+      "slug": "kepler_7",
+      "position": 5,
+      "block_id": "atto_1",
+      "status": "scritto",
+      "narrazione_fattuale_path": "narrazione_fattuale/cap_05.md",
+      "testo_finale_path": "testi_finali/cap_05.md",
+      "primary_location_id": "kepler_7.hangar_4_settore_12"
+    },
+    "cap_06": {
+      "id": "cap_06",
+      "title": "Scaricare 32 container",
+      "slug": "scaricare_32_container",
+      "position": 6,
+      "block_id": "atto_2",
+      "status": "scritto",
+      "narrazione_fattuale_path": "narrazione_fattuale/cap_06.md",
+      "testo_finale_path": "testi_finali/cap_06.md"
+    },
+    "cap_07": {
+      "id": "cap_07",
+      "title": "Decisione Helios",
+      "slug": "decisione_helios",
+      "position": 7,
+      "block_id": "atto_2",
+      "status": "scritto",
+      "narrazione_fattuale_path": "narrazione_fattuale/cap_07.md",
+      "testo_finale_path": "testi_finali/cap_07.md"
+    }
+  }
+}
