@@ -1,3 +1,10 @@
+---
+sid: cap_07
+slug: decisione-helios
+title: "Decisione Helios"
+status: definitivo
+---
+
 # Capitolo 7
 
 Il portellone della *California* si chiuse con un sibilo che sembrava un sospiro.

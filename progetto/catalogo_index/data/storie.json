@@ -1,0 +1,7 @@
+{
+  "_PLACEHOLDER_NOTE": "Dashboard storie placeholder vuota, valida a schema. Permette al cruscotto web di buildare /storie e /storie/[sid] anche senza dati reali. Verra' SOVRASCRITTA dall'audit/build storie del kit (Fase 04+). Non modificare a mano.",
+  "generated_from": "placeholder",
+  "saga_style_reference": "",
+  "n_storie": 0,
+  "storie": []
+}

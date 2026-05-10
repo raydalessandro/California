@@ -1,3 +1,10 @@
+---
+sid: cap_03
+slug: notte-insonne
+title: "Notte insonne"
+status: definitivo
+---
+
 # Capitolo 3
 
 Vera non dormiva.

@@ -1,3 +1,10 @@
+---
+sid: cap_01
+slug: caffe-allolio-motore
+title: "Caffè all'olio motore"
+status: definitivo
+---
+
 # Capitolo 1
 
 Il caffè della *California* sapeva di olio motore. Non sempre, solo quando Jonas aveva lavorato tutta la notte sul filtro del secondo propulsore. Milo bevve comunque, appoggiato al bancone della cucina che una volta era stato bianco.
