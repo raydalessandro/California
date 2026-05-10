@@ -163,6 +163,18 @@ Preferenza: la seconda. `web/vercel.json` template col `REPO_ROOT=../progetto` b
 
 ---
 
+### [ ] Pattern: documenti originali (#AILA o equivalente) hanno bisogno di una posizione canonica nel kit
+
+**Dove**: `progetto/_documenti_anima/originali_aila/` (creata ad hoc per California)
+
+**Problema**: il README del kit dice "I tre documenti `#AILA:1.0` originali (DNA, GRAFO, CHECKPOINT) sono stati convertiti nel formato del kit ma non sono inclusi nella zip". Il kit non prevede una posizione canonica per i documenti autoriali pre-kit. Questi sono fonte primaria utile per audit e re-derivazioni.
+
+**Workaround applicato**: creata `progetto/_documenti_anima/originali_aila/` con README di mapping.
+
+**Fix proposto al kit**: documentare la convenzione `_documenti_anima/originali_<formato_autoriale>/` come location canonica per i documenti pre-kit dell'autore. Aggiungere placeholder vuoto + README nel kit base.
+
+---
+
 ### [ ] `compile_catalog_from_graph.py` cerca bibbia.md in path errato
 
 **Dove**: `_scripts/compile_catalog_from_graph.py` (default `BIBBIA_PATH = REPO_ROOT / "bibbia.md"`)
