@@ -110,3 +110,65 @@ Preferenza: la seconda. `web/vercel.json` template col `REPO_ROOT=../progetto` b
 ## Voci aggiunte da test successivi
 
 (aggiungere qui con data)
+
+---
+
+## 2026-05-10 (bootstrap Fase 02 + popolamento UI)
+
+### [ ] `promote_entities_to_graph.py` genera `famiglia` inglese plurale (mismatch con UI)
+
+**Dove**: `_scripts/promote_entities_to_graph.py` vs `web/lib/types.ts` (`EntityFamiglia`)
+
+**Problema**: lo script Python crea schede con `famiglia: characters / locations / objects` (inglese plurale). La UI TypeScript si aspetta `EntityFamiglia = "personaggio" | "luogo" | "oggetto" | "vento" | "visual_signature"` (italiano singolare). La sidebar, il featured grid, il routing per categoria non riconoscono i valori inglesi.
+
+**Workaround applicato per California**: postprocess Python che rimpiazza `characters→personaggio, locations→luogo, objects→oggetto` in tutti i frontmatter `scheda.md` + entities.json.
+
+**Fix proposto al kit**: aggiungere mapping nel `promote_entities_to_graph.py` (output sempre italiano singolare) + documentare in `_convenzioni/naming_e_versioning.md`.
+
+---
+
+### [ ] `build_catalog_index.py` non calcola `totals`, `by_status`, `tree`
+
+**Dove**: `_scripts/build_catalog_index.py` vs `web/lib/types.ts` (`EntitiesData`)
+
+**Problema**: lo schema TypeScript `EntitiesData` richiede campi `totals` (totale, luogo, oggetto, personaggio, vento, visual_signature), `by_status` (canonico, provvisorio), `tree` (Record<famiglia, TreeNode>). Lo script Python genera invece chiavi top-level `_description`, `_generated_at`, `_total`, `entities[]` e basta. La home cruscotto e la sidebar restano vuote.
+
+**Workaround applicato per California**: postprocess Python che calcola totals/by_status e costruisce un tree minimale `famiglia → entity-leaf`.
+
+**Fix proposto al kit**: portare il calcolo dentro `build_catalog_index.py` (output completo conforme a `EntitiesData`).
+
+---
+
+### [ ] `Entity` schema mismatch: campi mancanti nei record entities.json
+
+**Dove**: `_scripts/build_catalog_index.py` vs `web/lib/types.ts` (`Entity`)
+
+**Problema**: il TS `Entity` ha 18 campi (id, name, famiglia, sottotipo, status, quartiere, categoria_strada, frontmatter, body_md, body_size_chars, prompt_grok_md, has_prompt_grok, folder_path, scheda_path, breadcrumb, images, n_images). Lo script Python genera solo 10 di questi (id, name, famiglia, sottotipo, tipo_grafo, ruolo_saga, status, ultima_modifica, card_path, appare_in_storie). I mancanti (quartiere, categoria_strada, frontmatter, body_md, body_size_chars, prompt_grok_md, has_prompt_grok, folder_path, scheda_path, breadcrumb, images, n_images) provocano `undefined` in render.
+
+**Workaround applicato per California**: postprocess Python che aggiunge i campi mancanti con default (null, [], "", false, 0).
+
+**Fix proposto al kit**: estendere `build_catalog_index.py` per leggere il body della scheda (`body_md`, `body_size_chars`), il blocco `prompt_grok` se presente, e generare `breadcrumb`/`folder_path` da convenzione naming.
+
+---
+
+### [ ] `bootstrap_graph.py` non sostituisce `project.id` e `project.title` template
+
+**Dove**: `_scripts/bootstrap_graph.py` vs `_fasi/02_congelamento_grafo/_schema_template/grafo_iniziale_TEMPLATE.json`
+
+**Problema**: il template ha `project.id: "<id_progetto>"` e `project.title: "<Titolo Progetto>"` come placeholder. Il bootstrap non sostituisce questi valori dai dati del glossario (che ha `project.id`, `project.title`, `project.subtitle`, `project.medium`, `project.target_audience`, `project.language`). Il grafo finisce committato col template-string.
+
+**Workaround applicato per California**: postprocess che copia `glossary.project.*` in `graph.project.*`.
+
+**Fix proposto al kit**: nel bootstrap, dopo aver caricato il template, sovrascrivere `project.*` con i campi corrispondenti dal glossario. Già documentato nel docstring di `load_glossary()` come TODO.
+
+---
+
+### [ ] `compile_catalog_from_graph.py` cerca bibbia.md in path errato
+
+**Dove**: `_scripts/compile_catalog_from_graph.py` (default `BIBBIA_PATH = REPO_ROOT / "bibbia.md"`)
+
+**Problema**: il kit California ha la bibbia in `progetto/_documenti_anima/bibbia.md`, non in `progetto/bibbia.md`. Lo script fallisce con "Fonte canonica non trovata" senza usare `BIBBIA_PATH` env var.
+
+**Workaround applicato**: saltato lo script (compile è opzionale per il primo deploy, le schede embrionali bastano per la UI vuota).
+
+**Fix proposto al kit**: aggiornare default a `REPO_ROOT / "_documenti_anima" / "bibbia.md"` oppure documentare nel kit che `BIBBIA_PATH` va sempre settato. Coerente con `.mcp.json` che già usa quel path.
