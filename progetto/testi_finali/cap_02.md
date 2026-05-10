@@ -1,3 +1,10 @@
+---
+sid: cap_02
+slug: sala-macchine
+title: "Sala macchine"
+status: definitivo
+---
+
 # Capitolo 2
 
 La sala macchine della *California* era il posto più caldo della nave. E il più rumoroso. E il più stretto. Jonas ci passava più tempo che nella sua cuccetta, il che spiegava perché la sua cuccetta fosse sempre in ordine e la sala macchine sembrasse esplosa.

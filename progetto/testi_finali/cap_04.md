@@ -1,3 +1,10 @@
+---
+sid: cap_04
+slug: allarme-prossimita
+title: "Allarme prossimità"
+status: definitivo
+---
+
 # Capitolo 4
 
 L'allarme di prossimità suonò alle sei del mattino.

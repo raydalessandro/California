@@ -1,3 +1,10 @@
+---
+sid: cap_05
+slug: kepler-7
+title: "Kepler-7"
+status: definitivo
+---
+
 # Capitolo 5
 
 Kepler-7 puzzava di zolfo e sudore.

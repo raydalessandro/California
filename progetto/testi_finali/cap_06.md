@@ -1,3 +1,10 @@
+---
+sid: cap_06
+slug: scaricare-32-container
+title: "Scaricare 32 container"
+status: definitivo
+---
+
 # Capitolo 6
 
 Scaricare trentadue container non era un lavoro da due persone.

@@ -21,9 +21,11 @@ export default function HomePage() {
         <h1 className="font-serif font-semibold text-5xl tracking-tight text-ink">
           {PROJECT_CONFIG.title}
         </h1>
-        <p className="font-serif italic text-xl text-ink-soft">
-          {PROJECT_CONFIG.subtitle}
-        </p>
+        {PROJECT_CONFIG.subtitle && (
+          <p className="font-serif italic text-xl text-ink-soft">
+            {PROJECT_CONFIG.subtitle}
+          </p>
+        )}
       </header>
 
       <section className="grid gap-6 md:grid-cols-2">
