@@ -24,7 +24,7 @@ export interface ProjectConfig {
 
 export const PROJECT_CONFIG: ProjectConfig = {
   title: "California",
-  subtitle: "Romanzo — fantascienza cargo, smuggling",
+  subtitle: "",
   description:
     "Cruscotto editoriale del romanzo California. Catalogo personaggi/luoghi/oggetti, atlante saga, capitoli scritti.",
   language: "it",

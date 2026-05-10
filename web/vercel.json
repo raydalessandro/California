@@ -1,6 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "_comment": "Config Vercel per California. Specializza il template kit web/ alla struttura di questa repo (dati narrativi in ../progetto). Non serve impostare REPO_ROOT nella dashboard Vercel: e' qui.",
   "build": {
     "env": {
       "REPO_ROOT": "../progetto"
